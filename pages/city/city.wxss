@@ -1,0 +1,12 @@
+.container{
+  margin: 0px;
+  padding: 0px;
+}
+.box{
+  background-color: grey;
+  width: 80%;
+  margin:10px auto;  /*向下移动10像素，水平居中对齐*/
+  border:1px solid black;
+  color:pink;
+  font-size: 24px;
+}

@@ -1,0 +1,14 @@
+<view class="container">
+   <view class="box">
+      <view>城市名称: {{cityName}}</view>
+      <view>当前气温:{{weather.temperature}}</view>
+      <view>天气状态:{{weather.info}}</view>
+      <view>风向:{{weather.direct}} 风级:{{weather.power}}</view>
+   </view>
+   <view class="box" wx:for="{{future}}">
+      <view>日期:{{item.date}}</view>
+      <view>气温:{{item.temperature}}</view>
+      <view>天气状态:{{item.weather}}</view>
+      <view>风向:{{item.direct}}</view>
+   </view>
+</view>

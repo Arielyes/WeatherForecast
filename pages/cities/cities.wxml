@@ -1,0 +1,7 @@
+<view class="container">
+  <view class="box" wx:for="{{cityList}}" id="{{item.id}}" bindtap="goCity">
+    <view>省份:{{item.province}}</view>
+    <view>城市:{{item.city}}</view>
+    <view>旗县区:{{item.district}}</view>
+  </view>
+</view>

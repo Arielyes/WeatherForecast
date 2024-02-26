@@ -1,0 +1,22 @@
+<view class="container">
+  <view class="top">
+    <swiper indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{bannerArray}}">
+        <swiper-item>
+          <image src="{{item.imgPath}}"/>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="middle"> 
+    <input model:value="{{cityName}}"/>
+    <text bindtap="search">搜索</text>
+  </view>
+  <view class="bottom">
+    <view>城市名称: {{cityName}}</view>
+    <view>当前气温:{{weather.temperature}}</view>
+    <view>天气状态:{{weather.info}}</view>
+    <view>风向:{{weather.direct}} 风级:{{weather.power}}</view>
+  </view>
+</view>

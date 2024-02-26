@@ -1,0 +1,31 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/cities/cities",
+    "pages/city/city"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#6495ED",
+    "navigationBarTitleText": "天气预报",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath":"/images/riskCities.png",
+        "selectedIconPath":"/images/riskCities-active.png"
+      },
+      {
+        "pagePath": "pages/cities/cities",
+        "text": "城市列表",
+        "iconPath":"/images/cities.png",
+        "selectedIconPath":"/images/cities-active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
